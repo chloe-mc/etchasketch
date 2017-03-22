@@ -1,0 +1,53 @@
+body{
+  font-family: sans-serif;
+}
+
+#menuWrapper{
+  width: 225px;
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  background-color: tan;
+  text-align: center;
+}
+#sketchWrapper{
+  margin-left: 225px;
+  padding: 10px;
+}
+#sketch{
+  width: 500px;
+  height: 500px;
+  border-radius: 20px;
+  margin: 50px auto;
+}
+h1{
+  font-size: 2em;
+  font-weight: bold;
+  padding-top: 40px;
+  letter-spacing: 2px;
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 60px 0;
+}
+li{
+  padding: 20px;
+}
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  text-decoration: underline;
+}
+.item {
+  background-color: yellow;
+  display: inline-block;
+  width: 0;
+  height: 0;
+}
+.item:hover{
+  background-color: black;
+}
