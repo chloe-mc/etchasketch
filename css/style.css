@@ -1,50 +1,97 @@
 body{
-  font-family: sans-serif;
+  font-family: 'Press Start 2P', cursive;
+  min-width: 900px;
+  color: white;
 }
 
-#menuWrapper{
-  width: 225px;
-  position:absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  background-color: tan;
-  text-align: center;
+#header{
+  background-color: green;
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  padding: 0 15px;
+}
+
+#inputWrapper{
+  margin: auto;
 }
 #sketchWrapper{
-  margin-left: 225px;
+  margin: 40px auto;
   padding: 10px;
+  background-color: #bf4040;
+  width: 600px;
+  height: 675px;
+  border-radius: 20px;
+  text-align: center;
+  border: solid gray 1px;
 }
 #sketch{
   width: 500px;
   height: 500px;
-  border-radius: 20px;
-  margin: 50px auto;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 20px;
+  border: solid gray 1px;
+}
+#lKnob, #rKnob{
+  /*background-color: white;*/
+  width: 100px;
+  height: 100px;
+  /*border: solid gray 1px;*/
+  /*border-radius: 50%;*/
+  display: inline-block;
+  /*box-shadow: 4px 4px 10px gray;*/
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
+}
+#lKnob:hover, #rKnob:hover {
+  transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+}
+#rKnob{
+  float: right;
+}
+#lKnob{
+  float: left;
+}
+#colorBar {
+  background-color: black;
+  height: 10px;
+  width: 100%;
+}
+img {
+  border-radius: 50%;
+
+}
+img:hover{
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 h1{
-  font-size: 2em;
-  font-weight: bold;
-  padding-top: 40px;
-  letter-spacing: 2px;
+  font-size: 1.3em;
+  line-height: 70px;
 }
 ul{
   list-style-type: none;
-  margin: 0;
-  padding: 60px 0;
 }
+
 li{
-  padding: 20px;
+  margin-left: 25px;
+  font-size: 0.75em;
+  display: inline;
+  line-height: 70px;
+}
+li:hover{
+  /*background-color: #d9f2e6;*/
+  text-decoration: underline;
 }
 a{
   text-decoration: none;
-  color: black;
-}
-a:hover{
-  text-decoration: underline;
+  color: white;
 }
 .item {
-  background-color: yellow;
-  display: inline-block;
+  background-color: lightgray;
+  float: left;
   width: 0;
   height: 0;
 }

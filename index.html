@@ -1,25 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EtchASketch</title>
+  <title>SketchAEtch</title>
   <link rel="stylesheet" href="css/reset.css" />
   <link rel="stylesheet" href="css/style.css" />
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
   <script type="text/javascript" src="js/script.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
 </head>
 <body>
-<div id="menuWrapper">
-  <h1>Etch <br> -A- <br> Sketch</h1>
-  <ul>
-    <li><a href="#">Start Over</a></li>
-    <li><a href="#">Black</a></li>
-    <li><a href="#">Colors</a></li>
-    <li><a href="#">Resolution</a></li>
-  </ul>
+
+<div id="header">
+  <div id="titleWrapper">
+    <h1>Sketch-A-Etch</h1>
+  </div>
+  <div id="menuWrapper">
+    <ul>
+      <li><a href="#">Start Over</a></li>
+      <li><a href="#">Black</a></li>
+      <li><a href="#">Random Color</a></li>
+      <li><a href="#">Change Grid Size</a></li>
+    </ul>
+  </div>
 </div>
-<div id="sketchWrapper">
-  <input id="gridSize" value="16">Grid Size</input>
-  <div id="sketch"></div>
+
+<div id=colorBar></div>
+
+<div id="inputWrapper">
+  <div id="sketchWrapper">
+    <div id="sketch"></div>
+    <img id="lKnob" src="img/knob.png">
+    <img id="rKnob" src="img/knob.png">
+  </div>
 </div>
+
 </body>
 </html>
